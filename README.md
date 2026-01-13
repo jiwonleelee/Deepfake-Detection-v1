@@ -1,6 +1,5 @@
 # Deepfake-Detection-Project
 🛡️ Project: Deepfake Detection (Hecto Contest)
-이화여자대학교 패턴인식 팀 프로젝트 (Team 5) - 내부 협업용 가이드
 
 📅 Project Overview
 대회명: 헥토(Hecto) 경진대회
