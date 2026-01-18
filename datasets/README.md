@@ -6,9 +6,9 @@ This repository utilizes a balanced combination of **Celeb-DF v2** and **FaceFor
 
 ### **Celeb-DF v2**
 - **Real Videos:** 890
-- **Fake Videos:** 890
+- **Fake Videos:** 890 (Sampled to maintain a 1:1 ratio between real and fake classes.)
 - **Total:** 1,780 videos
-- [Kaggle Dataset Link](https://www.kaggle.com/datasets/reubensuju/celeb-df-v2)
+- [GitHub Link](https://github.com/yuezunli/celeb-deepfakeforensics)
 
 ### **FaceForensics++ (FF++)**
 - **Real Videos:** 1,000
