@@ -8,7 +8,7 @@ This repository utilizes a balanced combination of **Celeb-DF v2** and **FaceFor
 - **Real Videos:** 890
 - **Fake Videos:** 890
 - **Total:** 1,780 videos
-- [GitHub Link](https://github.com/yuezunli/celeb-deepfake-v2)
+- [Kaggle Dataset Link](https://www.kaggle.com/datasets/reubensuju/celeb-df-v2)
 
 ### **FaceForensics++ (FF++)**
 - **Real Videos:** 1,000
@@ -18,7 +18,7 @@ This repository utilizes a balanced combination of **Celeb-DF v2** and **FaceFor
     - FaceSwap (FS): 250
     - NeuralTextures (NT): 250
 - **Total:** 2,000 videos
-- 
+- [GitHub Link](https://github.com/ondyari/FaceForensics)
 
 ---
 
