@@ -40,11 +40,18 @@ def validate_video_level(model, dataloader, criterion, device):
         if (np.mean(video_scores[vid]) > 0.5) == video_labels[vid]: correct += 1
     return running_loss / len(dataloader), correct / len(video_scores)
 
-def save_checkpoint(state, is_best, model_name, save_dir='/content/drive/MyDrive/HECTO/checkpoints/01_backbone_selection'):
+def save_checkpoint(state, is_best, model_name, save_dir):
+    """
+    state: epoch, model_state, optimizer_state, best_acc, es_state(추가됨)를 포함한 딕셔너리
+    """
     os.makedirs(save_dir, exist_ok=True)
+    
+    # 1. 일반 체크포인트 저장 (매 에포크 갱신)
     filename = os.path.join(save_dir, f"{model_name}_checkpoint.pth.tar")
     torch.save(state, filename)
+    
+    # 2. 베스트 모델 저장 (성능 갱신 시에만)
     if is_best:
         best_filename = os.path.join(save_dir, f"{model_name}_best.pth.tar")
         torch.save(state, best_filename)
-        print(f"⭐ 베스트 모델 저장 완료: {best_filename}")
+        print(f"⭐ [Best Updated] {model_name} - Best Acc: {state['best_acc']:.4f} 저장 완료")
