@@ -38,6 +38,7 @@ The backbone was chosen by balancing inference speed and accuracy.
 ### 2. Layer-wise Adaptive Learning Rate (LLRD)
 * **Experiment**: Global learning rate vs. Differential learning rate (Lower LR for initial layers).
 * **Result**: **Layer-wise Differential LR** led to more stable convergence and higher overall performance.
+![Layer-wise LR Model Training History](./Training_history_ConvNeXt-Tiny.png)
 
 ### 3. On-the-fly Augmentation Strategy
 * **Experiment**: Applying stronger augmentations to FF++ and Celeb-DF to balance the heavy distortion found in the DF dataset.
