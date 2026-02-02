@@ -6,7 +6,7 @@ This project was initiated to participate in the **2024 HECTO Deepfake Detection
 * **January 2026** (1 month)
 
 ## 👨‍💻 Team Members
-* **Gyuri Baek**, **Jiwon Lee** (Undergraduate collaboration)
+* **Gyurie Baek**, **Jiwon Lee** (Undergraduate collaboration)
 
 ---
 
@@ -79,5 +79,5 @@ While this joint project concludes here, we plan to further develop this model i
 ## 🔗 Individual Repositories (Post-Contest Development)
 Check out our individual journeys as we continue to evolve this project:
 
-* [Gyuri's Personal Lab](https://github.com/Gyuurie) 
+* [Gyurie's Personal Lab](https://github.com/Gyuurie) 
 * [Jiwon's Personal Lab](https://github.com/jiwonleelee) 
