@@ -1,6 +1,6 @@
 # 🕵️‍♂️ Deepfake Detection Project: Analysis of Limitations in Legacy Datasets and Domain Generalization
 
-This project was initiated to participate in the **2024 HECTO Deepfake Detection Contest**. It involves designing a deepfake detection model and analyzing performance through various experiments.
+This project was initiated to participate in the **2026 HECTO Deepfake Detection Contest**. It involves designing a deepfake detection model and analyzing performance through various experiments.
 
 ## 📅 Project Period
 * **January 2026** (1 month)
