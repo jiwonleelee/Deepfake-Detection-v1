@@ -5,9 +5,9 @@ This repository utilizes a balanced combination of **Celeb-DF v2** and **FaceFor
 ## 1. Data Sources & Statistics
 
 ### **Celeb-DF v2**
-- **Real Videos:** 890
-- **Fake Videos:** 890 (Sampled to maintain a 1:1 ratio between real and fake classes.)
-- **Total:** 1,780 videos
+- **Real Videos:** 580 (only target vedios)
+- **Fake Videos:** 580 (Sampled to maintain a 1:1 ratio between real and fake classes.)
+- **Total:** 1,160 videos
 - [GitHub Link](https://github.com/yuezunli/celeb-deepfakeforensics)
 
 ### **FaceForensics++ (FF++)**
@@ -20,6 +20,14 @@ This repository utilizes a balanced combination of **Celeb-DF v2** and **FaceFor
 - **Total:** 2,000 videos
 - [GitHub Link](https://github.com/ondyari/FaceForensics)
 
+### **DeeperForensics-1.0 (DF)**
+- **Real Videos:** 2,000
+- **Fake Videos:** 2,000 (Sampled 500 videos from each perturbation category)
+    - Level 3, Level 4, Level 5, and Mix 2
+    - 500 videos per category based on Target ID
+- **Total:** 4,000 videos
+- [GitHub Link](https://github.com/EndlessSora/DeeperForensics-1.0)
+  
 ---
 
 ## 2. Preprocessing Pipeline (Offline)
@@ -40,3 +48,10 @@ To optimize training efficiency and focus on facial artifacts, the following off
 - **Color Space:** Converted to RGB format for backbone model compatibility.
 
 ---
+
+## 3. Data Integrity & Splitting Strategy
+
+To ensure high-quality training and prevent data leakage, the following principles were applied during dataset construction:
+
+* **1:1 Target ID Matching**: For every fake video included, its corresponding original real video (based on the same Target ID) is also included to maintain a perfect class balance.
+* **Identity-aware Splitting**: Data splitting (Train/Val/Test) is performed based on **Target IDs**. All videos associated with a specific identity—both real and fake—are assigned to the same split. This prevents the model from "memorizing" an individual's facial features and ensures it learns to distinguish manipulation artifacts rather than personal identities.
