@@ -1,6 +1,6 @@
 # Dataset Specifications
 
-This repository utilizes a balanced combination of **Celeb-DF v2** and **FaceForensics++ (FF++)** datasets for deepfake detection. The dataset is constructed with a 1:1 ratio of real and fake samples to ensure unbiased training.
+This repository utilizes a balanced combination of **Celeb-DF v2**, **FaceForensics++ (FF++)** and **DeeperForensics-1.0 (DF)** datasets for deepfake detection. The dataset is constructed with a 1:1 ratio of real and fake samples to ensure unbiased training.
 
 ## 1. Data Sources & Statistics
 
