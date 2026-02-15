@@ -81,4 +81,4 @@ While this joint project concludes here, we plan to further develop this model i
 Check out our individual journeys as we continue to evolve this project:
 
 * [Gyurie's Personal Lab](https://github.com/Gyuurie) 
-* [Jiwon's Personal Lab](https://github.com/jiwonleelee) 
+* [Jiwon's Personal Lab](https://github.com/jiwonleelee/Deepfake-Detection-v2?tab=readme-ov-file) 
