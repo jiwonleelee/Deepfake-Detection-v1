@@ -5,8 +5,22 @@ This project was initiated to participate in the **2026 HECTO Deepfake Detection
 ## 📅 Project Period
 * **January 2026** (1 month)
 
-## 👨‍💻 Team Members
-* **Gyurie Baek**, **Jiwon Lee** (Undergraduate collaboration)
+---
+
+## 👨‍💻 Team Members & Contributions
+
+### Jiwon Lee
+* **Data Pipeline & Preprocessing**: Face detection, alignment, and extraction pipeline design (MTCNN). Conducted preprocessing for **FF++ and DF** datasets.
+* **Modeling & Strategy**: 
+    * Executed backbone selection experiments (ResNet, EfficientNet, ViT, ConvNeXt).
+    * Implemented and validated Layer-wise Adaptive Learning Rate (**LLRD**) strategies.
+    * Designed and tested the **Branch Structure Experiment** for feature map merging.
+* **Performance Analysis**: Led the root cause analysis for the domain gap between training data and the leaderboard, identifying the necessity of cross-dataset validation and modern augmentation (SBI).
+
+### Gyurie Baek
+* **Data Engineering**: Managed **Celeb-DF** preprocessing and constructed consolidated **training CSV** metadata. Designed and implemented the inference pipeline for the leaderboard test set, including CSV generation for final submission.
+* **Augmentation Strategy**: Developed and applied **differential augmentation techniques** tailored to each dataset’s characteristics (e.g., compensating for artifacts in DF vs. Celeb-DF).
+* **Operation & Deployment**: Handled the full lifecycle of leaderboard submissions and monitored public score feedback to iterate on model performance.
 
 ---
 
