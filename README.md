@@ -81,17 +81,6 @@ Despite high internal validation, the leaderboard score dropped significantly. W
 
 ---
 
-## 🗝️ My Contributions
-
-* **Data Pipeline & Preprocessing**: Face detection, alignment, and extraction pipeline design (MTCNN). Conducted preprocessing for FF++ and DF datasets.
-* **Modeling & Strategy**: 
-    * Executed backbone selection experiments (ResNet, EfficientNet, ViT, ConvNeXt).
-    * Implemented and validated Layer-wise Adaptive Learning Rate (LLRD) strategies.
-    * Designed and tested the Branch Structure Experiment for feature map merging.
-* **Performance Analysis**: Led the root cause analysis for the domain gap between training data and the leaderboard, identifying the necessity of cross-dataset validation and modern augmentation (SBI).
-
----
-
 ## 🚀 Future Work & Development
 While this joint project concludes here, we plan to further develop this model individually in the following directions:
 
